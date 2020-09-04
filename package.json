@@ -1,6 +1,6 @@
 {
   "name": "libclang",
-  "version": "0.0.11",
+  "version": "v1.0.0-alpha.1",
   "main": "libclang.js",
   "description": "Bindings to libclang",
   "keywords": [
