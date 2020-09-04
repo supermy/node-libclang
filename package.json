@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "ffi-napi": "^3.0.1",
-    "ref-array-di": "^1.2.1",
+    "ref-array-di": "^1.2.2",
     "ref-napi": "^3.0.1",
     "ref-struct-di": "^1.1.0",
     "ref-union-di": "^1.0.1"
