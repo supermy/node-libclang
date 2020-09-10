@@ -9,6 +9,11 @@
     "bindings"
   ],
   "author": "Timothy J Fontaine <tjfontaine@gmail.com>",
+  "contributors": [{
+    "name": "Joel Purra",
+    "email": "code+npm@joelpurra.com",
+    "url": "https://joelpurra.com/"
+  }],
   "license": "MIT",
   "dependencies": {
     "ffi-napi": "^3.0.1",
