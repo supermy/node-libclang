@@ -19,6 +19,13 @@ node-libclang
 =============
 node.js module for libclang and parsing c-style source from javascript
 
+Installation
+------------
+
+```shell
+npm install --save github:node-ffi-packager/node-libclang#v1
+```
+
 AST Traversal
 -------------
 ```javascript
@@ -44,14 +51,13 @@ tu.dispose();
 
 Generate FFI Bindings
 ---------------------
-This has been moved to its own library `npm install -g ffi-generate`
 
-See also https://github.com/tjfontaine/node-ffi-generate
+See [node-ffi-generate](https://github.com/node-ffi-packager/node-ffi-generate).
 
 Notes
 -----
 Not all of libclang is wrapped yet, but there's enough for
-[ffi-generate](https://github.com/tjfontaine/node-ffi-generate) to regenerate
+[node-ffi-generate](https://github.com/node-ffi-packager/node-ffi-generate) to regenerate
 the dynamic clang bindings.
 
 The native wrapper isn't completely fleshed out or free of errors. Enough is
