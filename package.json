@@ -23,5 +23,22 @@
     "ref-napi": "^2.1.2",
     "ref-struct-di": "^1.1.1",
     "ref-union-di": "^1.0.1"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "^2.0.5"
+  },
+  "scripts": {
+    "test": "npm run --silent lint",
+    "lint": "npm run --silent lint:prettier",
+    "lint:fix": "npm run --silent lint:prettier:fix",
+    "lint:prettier": "prettier --list-different . || { echo \"Prettier needs to format the above files. Try 'npm run --silent lint:fix'.\" && exit 1; }",
+    "lint:prettier:fix": "prettier --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run --silent test",
+      "pre-push": "npm run --silent test"
+    }
   }
 }
