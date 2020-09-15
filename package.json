@@ -1,6 +1,6 @@
 {
   "name": "libclang",
-  "version": "0.0.11",
+  "version": "v1.0.0",
   "main": "libclang.js",
   "description": "Bindings to libclang",
   "keywords": [
@@ -9,11 +9,19 @@
     "bindings"
   ],
   "author": "Timothy J Fontaine <tjfontaine@gmail.com>",
+  "contributors": [
+    {
+      "name": "Joel Purra",
+      "email": "code+npm@joelpurra.com",
+      "url": "https://joelpurra.com/"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
-    "ffi": "",
-    "ref": "",
-    "ref-array": "",
-    "ref-struct": ""
+    "ffi-napi": "^3.0.1",
+    "ref-array-di": "^1.2.2",
+    "ref-napi": "^2.1.2",
+    "ref-struct-di": "^1.1.1",
+    "ref-union-di": "^1.0.1"
   }
 }
