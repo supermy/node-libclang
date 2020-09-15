@@ -33,7 +33,7 @@ npm install --save github:node-ffi-packager/node-libclang#semver:^v1.0.0
 
 ## AST Traversal
 
-See [`example.js`](./example.js).
+See [`examples/`](./examples/).
 
 ## Generate FFI Bindings
 
