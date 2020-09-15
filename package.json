@@ -17,11 +17,37 @@
     }
   ],
   "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "dependencies": {
+    "engine-check": "^1.0.1",
     "ffi-napi": "^3.0.1",
     "ref-array-di": "^1.2.2",
     "ref-napi": "^2.1.2",
     "ref-struct-di": "^1.1.1",
     "ref-union-di": "^1.0.1"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "eslint-config-joelpurra": "github:joelpurra/eslint-config-joelpurra#semver:^1.0.0",
+    "prettier": "^2.0.5",
+    "xo": "^0.33.0"
+  },
+  "scripts": {
+    "test": "npm run --silent lint",
+    "lint": "npm run --silent lint:xo && npm run --silent lint:prettier",
+    "lint:fix": "npm run --silent lint:xo:fix && npm run --silent lint:prettier:fix",
+    "lint:prettier": "prettier --list-different \"**/*.json\" \"**/*.md\" || { echo \"Prettier needs to format the above files. Try 'npm run --silent lint:fix'.\" && exit 1; }",
+    "lint:prettier:fix": "prettier --write \"**/*.json\" \"**/*.md\"",
+    "lint:xo": "xo",
+    "lint:xo:fix": "xo --fix",
+    "prepublishOnly": "git diff-index --exit-code master && npm run --silent rebuild && npm run --silent test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run --silent test",
+      "pre-push": "npm run --silent test"
+    }
   }
 }
