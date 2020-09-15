@@ -2,6 +2,10 @@
   <a href="https://github.com/node-ffi-packager"><img src="https://raw.githubusercontent.com/node-ffi-packager/resources/master/logotype/node-ffi-packager.svg?sanitize=true" alt="node-ffi-packager logotype, impossible cubes in green" width="256" border="0" /></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/node-ffi-packager/node-libclang">README</a> &middot; <a href="./CHANGELOG.md">Changelog</a>
+</p>
+
 # [Forked version of `node-libclang`](https://github.com/node-ffi-packager/node-node-libclang)
 
 - Used by [node-ffi-packager](https://github.com/node-ffi-packager) to generate [node-ffi-libraries](https://github.com/node-ffi-libraries).
@@ -11,30 +15,25 @@
 
 ---
 
+# node-libclang
 
-
-
-
-node-libclang
-=============
 node.js module for libclang and parsing c-style source from javascript
 
-Installation
-------------
+## Installation
 
 ```shell
 npm install --save github:node-ffi-packager/node-libclang#v1
 ```
 
-AST Traversal
--------------
+## AST Traversal
+
 ```javascript
-var libclang = require('libclang');
+var libclang = require("libclang");
 
 var index = new libclang.index();
 var tu = new libclang.translationunit();
 
-tu.fromSource(idx, 'myLibrary.h', ['-I/path/to/my/project']);
+tu.fromSource(idx, "myLibrary.h", ["-I/path/to/my/project"]);
 
 tu.cursor().visitChildren(function (parent) {
   switch (this.kind) {
@@ -47,15 +46,14 @@ tu.cursor().visitChildren(function (parent) {
 
 index.dispose();
 tu.dispose();
-````
+```
 
-Generate FFI Bindings
----------------------
+## Generate FFI Bindings
 
 See [node-ffi-generate](https://github.com/node-ffi-packager/node-ffi-generate).
 
-Notes
------
+## Notes
+
 Not all of libclang is wrapped yet, but there's enough for
 [node-ffi-generate](https://github.com/node-ffi-packager/node-ffi-generate) to regenerate
 the dynamic clang bindings.
