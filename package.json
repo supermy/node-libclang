@@ -17,7 +17,11 @@
     }
   ],
   "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "dependencies": {
+    "engine-check": "^1.0.1",
     "ffi-napi": "^3.0.1",
     "ref-array-di": "^1.2.2",
     "ref-napi": "^2.1.2",

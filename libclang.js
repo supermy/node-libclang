@@ -19,6 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE
 
+var engineCheck = require('engine-check');
+
+engineCheck({
+  // NOTE: read engine range from the current directory rather than the application entry point (main) module. The application can enforce their own range if they want to.
+  searchRoot: __dirname,
+});
+
 exports.Cursor = require('./lib/cursor');
 exports.Index = require('./lib/index');
 exports.TranslationUnit = require('./lib/translationunit');
