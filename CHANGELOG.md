@@ -6,7 +6,7 @@
   <a href="https://github.com/node-ffi-packager/node-libclang">README</a> &middot; <a href="./CHANGELOG.md">Changelog</a>
 </p>
 
-# [Forked version of `node-libclang`](https://github.com/node-ffi-packager/node-node-libclang) changelog
+# [Forked version of `node-libclang`](https://github.com/node-ffi-packager/node-libclang) changelog
 
 Change summaries and notable excerpts from the commit log.
 

@@ -2,7 +2,7 @@
   "name": "libclang",
   "version": "v1.0.0",
   "main": "libclang.js",
-  "description": "Bindings to libclang",
+  "description": "Node.js module for libclang, used for parsing C language family (C, C++, Objective C/C++, OpenCL, CUDA, and RenderScript) files from javascript.",
   "keywords": [
     "libclang",
     "ffi",
