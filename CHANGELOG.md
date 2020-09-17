@@ -10,6 +10,16 @@
 
 Change summaries and notable excerpts from the commit log.
 
+## v2.0.0
+
+### ⚠ Breaking changes
+
+- TODO
+
+### Changes
+
+- TODO
+
 ## v1.0.0
 
 Forked by [Joel Purra](https://joelpurra.com/) for use in [node-ffi-packager](https://github.com/node-ffi-packager).
