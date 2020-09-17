@@ -1,5 +1,5 @@
 {
-  "name": "libclang",
+  "name": "@ffi-packager/libclang",
   "version": "2.0.0-alpha.1",
   "main": "index.js",
   "description": "Node.js module for libclang, used for parsing C language family (C, C++, Objective C/C++, OpenCL, CUDA, and RenderScript) files from javascript.",
