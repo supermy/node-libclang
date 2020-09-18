@@ -34,4 +34,6 @@ exports.TranslationUnit = require("./lib/translationunit");
 exports.Type = require("./lib/type");
 exports.TypeKind = require("./lib/type-kind");
 exports.Location = require("./lib/location");
+
 exports.libclang = require("./lib/dynamic-clang");
+exports.util = require("./lib/util");
