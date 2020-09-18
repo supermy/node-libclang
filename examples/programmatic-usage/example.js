@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const {
 	ChildVisitResult,
 	CursorKind,
@@ -12,7 +13,6 @@ const tu = TranslationUnit.fromSource(index, "mylibrary.h", []);
 tu.cursor.visitChildren(function (_parent) {
 	switch (this.kind) {
 		case CursorKind.FunctionDecl:
-			// eslint-disable-next-line no-console
 			console.log(this.spelling);
 			break;
 		default:
@@ -22,4 +22,6 @@ tu.cursor.visitChildren(function (_parent) {
 	return ChildVisitResult.Continue;
 });
 
+// NOTE: remember to clean up.
+tu.dispose();
 index.dispose();
