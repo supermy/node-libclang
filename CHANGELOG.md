@@ -14,11 +14,21 @@ Change summaries and notable excerpts from the commit log.
 
 ### ⚠ Breaking changes
 
-- TODO
+The below list may be incomplete.
+
+- Target Node.js v12, v14, v16.
+  - Execution on v14, v16 may fail with `Check failed: result.second` due to bug [#96 in `ffi-napi`](https://github.com/node-ffi-napi/node-ffi-napi/issues/96).
+    - One workaround is to ensure there is only a single copy of `ffi-napi` in the `node_modules` tree.
+    - Inspect with `npm ls ffi-napi`.
+- The package name is now `@ffi-packager/libclang`.
+- [Naming conventions](<https://en.wikipedia.org/wiki/Naming_convention_(programming)#Examples_of_multiple-word_identifier_formats>) should be normalized; class names now use Pascal case, methods use camel case.
 
 ### Changes
 
-- TODO
+- The dynamic Clang has been regenerated for [clang-9](https://clang.llvm.org/) using [`@ffi-packager/ffi-generate`](https://github.com/node-ffi-packager/node-ffi-generate) v2.0.0.
+  - Test coverage in `@ffi-packager/ffi-generate` should make up for the lack of tests in `@ffi-packager/libclang`.
+- Examples have been updated.
+- 86b4c9c Add `isAnonymous` properties.
 
 ## v1.0.0
 
