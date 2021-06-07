@@ -10,6 +10,10 @@
 
 Change summaries and notable excerpts from the commit log.
 
+## v2.0.1
+
+- Minor stylistic changes.
+
 ## v2.0.0
 
 ### ⚠ Breaking changes
