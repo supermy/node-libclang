@@ -22,7 +22,7 @@
 ## Installation
 
 ```shell
-npm install --save github:node-ffi-packager/node-libclang#semver:^v2.0.0
+npm install --save github:node-ffi-packager/node-libclang#semver:^v2.0.1
 ```
 
 ## Requirements
