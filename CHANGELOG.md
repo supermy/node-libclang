@@ -10,6 +10,10 @@
 
 Change summaries and notable excerpts from the commit log.
 
+## v2.0.1
+
+- Minor stylistic changes.
+
 ## v2.0.0
 
 ### ⚠ Breaking changes
@@ -84,4 +88,4 @@ See commit log.
 
 ---
 
-`node-libclang` Copyright &copy; 2011, 2012, 2013, 2014 [Timothy J Fontaine](https://github.com/tjfontaine), 2020 [Joel Purra](https://joelpurra.com/). Released under [MIT License](https://opensource.org/licenses/MIT).
+`node-libclang` Copyright &copy; 2011, 2012, 2013, 2014 [Timothy J Fontaine](https://github.com/tjfontaine), &copy; 2020, 2021 [Joel Purra](https://joelpurra.com/). Released under [MIT License](https://opensource.org/licenses/MIT).
