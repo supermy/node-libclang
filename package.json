@@ -23,17 +23,17 @@
   },
   "dependencies": {
     "engine-check": "^1.0.1",
-    "ffi-napi": "^3.0.1",
+    "ffi-napi": "^3.1.0",
     "ref-array-di": "^1.2.2",
     "ref-napi": "^2.1.2",
     "ref-struct-di": "^1.1.1",
     "ref-union-di": "^1.0.1"
   },
   "devDependencies": {
-    "husky": "^4.3.0",
     "eslint-config-joelpurra": "github:joelpurra/eslint-config-joelpurra#semver:^1.0.0",
-    "prettier": "^2.0.5",
-    "xo": "^0.33.0"
+    "husky": "^4.3.8",
+    "prettier": "^2.3.1",
+    "xo": "^0.33.1"
   },
   "scripts": {
     "test": "npm run --silent lint",
