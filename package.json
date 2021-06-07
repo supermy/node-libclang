@@ -1,8 +1,9 @@
 {
-  "name": "libclang",
-  "version": "v1.0.0",
-  "main": "libclang.js",
-  "description": "Bindings to libclang",
+  "name": "@ffi-packager/libclang",
+  "version": "2.0.0-alpha.1",
+  "main": "index.js",
+  "description": "Node.js module for libclang, used for parsing C language family (C, C++, Objective C/C++, OpenCL, CUDA, and RenderScript) files from javascript.",
+  "homepage": "https://github.com/node-ffi-packager/node-libclang",
   "keywords": [
     "libclang",
     "ffi",
@@ -18,21 +19,21 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=10.0.0"
+    "node": "^12.0.0 || ^14.0.0 || ^16.0.0"
   },
   "dependencies": {
     "engine-check": "^1.0.1",
-    "ffi-napi": "^3.0.1",
+    "ffi-napi": "^4.0.3",
     "ref-array-di": "^1.2.2",
-    "ref-napi": "^2.1.2",
+    "ref-napi": "^3.0.3",
     "ref-struct-di": "^1.1.1",
     "ref-union-di": "^1.0.1"
   },
   "devDependencies": {
-    "husky": "^4.3.0",
-    "eslint-config-joelpurra": "github:joelpurra/eslint-config-joelpurra#semver:^1.0.0",
-    "prettier": "^2.0.5",
-    "xo": "^0.33.0"
+    "eslint-config-joelpurra": "github:joelpurra/eslint-config-joelpurra#semver:^5.1.1",
+    "husky": "^4.3.8",
+    "prettier": "^2.3.1",
+    "xo": "^0.39.1"
   },
   "scripts": {
     "test": "npm run --silent lint",
