@@ -19,18 +19,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE
 
-const {
-	functions,
-} = require("./dynamic-clang");
+const engineCheck = require("engine-check");
 
-const cxStringToString = (getCXStringFromLibclang) => {
-	const libclangCXString = getCXStringFromLibclang();
-	const javascriptString = functions.clang_getCString(libclangCXString);
-	functions.clang_disposeString(libclangCXString);
+engineCheck({
+	// NOTE: read engine range from the current directory rather than the application entry point (main) module. The application can enforce their own range if they want to.
+	searchRoot: __dirname,
+});
 
-	return javascriptString;
-};
+exports.ChildVisitResult = require("./lib/child-visit-result");
+exports.Cursor = require("./lib/cursor");
+exports.CursorKind = require("./lib/cursor-kind");
+exports.Index = require("./lib");
+exports.TranslationUnit = require("./lib/translationunit");
+exports.Type = require("./lib/type");
+exports.TypeKind = require("./lib/type-kind");
+exports.Location = require("./lib/location");
 
-module.exports = {
-	cxStringToString,
-};
+exports.libclang = require("./lib/dynamic-clang");
+exports.util = require("./lib/util");
