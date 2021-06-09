@@ -10,6 +10,10 @@
 
 Change summaries and notable excerpts from the commit log.
 
+## v2.0.2
+
+- The dynamic Clang header has been regenerated for [clang-9](https://clang.llvm.org/) using [`@ffi-packager/ffi-generate`](https://github.com/node-ffi-packager/node-ffi-generate) v2.0.2.
+
 ## v2.0.1
 
 - Minor stylistic changes.
