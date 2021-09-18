@@ -8,6 +8,8 @@
 
 # [Forked version of `node-libclang`](https://github.com/node-ffi-packager/node-libclang)
 
+- lib/dynamic-clang.js 通过 FFI 调用 clang;是最基础的；
+- 测试 LD_LIBRARY_PATH="$(llvm-config --libdir)"  node examples/programmatic-usage/example.js
 - Used by [node-ffi-packager](https://github.com/node-ffi-packager) to generate [node-ffi-libraries](https://github.com/node-ffi-libraries).
 - Used by a similarly forked [node-ffi-generate](https://github.com/node-ffi-packager/node-ffi-generate).
 - Use this version by [referencing the repository/branch in `package.json`](https://docs.npmjs.com/configuring-npm/package-json.html#github-urls) instead of the [official version published on npm](https://www.npmjs.com/package/libclang).
